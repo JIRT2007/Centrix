@@ -8,6 +8,8 @@
 - **Modular configuration:** Organizes tasks into independent scripts to facilitate maintenance and modification.
 - **Flexibility:** Allows for the adaptation of installations and configurations based on each user's needs.
 
+![CENTRIX](SETTINGS/DESKTOP.png) 
+
 ## REQUIREMENTS:
 - A Debian GNU/Linux system installed with the default GNOME desktop environment.
 - The Git program installed, in order to clone the repository.
