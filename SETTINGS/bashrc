@@ -1,0 +1,31 @@
+# =====================================================================
+#  BASH CONFIG DEFAULT 
+# =====================================================================
+
+## Si la sesion no es interactiva, detener lectura:
+case $- in
+	*i*) ;;
+	*) return;;
+esac
+
+## Habilitar soporte de colores para terminales modernas:
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+## Autocompletado de comandos con taburador:
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+	. /usr/share/bash-completion/bash_completion
+fi
+
+# =====================================================================
+#  BASH CONFIG PERSONALIZADA
+# =====================================================================
+
+# PROMPT:
+	PS1='\[\e[32;1m\][\u][\h][\[\e[37m\]\W\[\e[32m\]]>\[\e[0m\] '
+
+# ALIASES:
+	alias ls='ls -l --group-directories-first --color=auto'
+	alias fpc='fpc -gl -Co -Cr -Miso' #Compilacion para Free Pascal.
+	alias th='alacritty -e bash -c "$HOME/Centrix/themes.sh"'

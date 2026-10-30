@@ -1,0 +1,59 @@
+[general]
+live_config_reload = true
+
+[window]
+dimensions = { columns = 100, lines = 25 }
+padding = { x = 15, y = 15 }
+opacity = 0.97
+
+decorations = "None"
+title = ""
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 1000
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+[font]
+size = 12.0
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { style = "Bold" }
+italic = { style = "Italic" }
+bold_italic = { style = "Bold Italic" }
+
+[font.offset]
+x = -1
+y = -2
+
+[colors]
+	[colors.primary] 
+	foreground = "#d4be98"
+	background = "#1C1C1C"
+
+	[colors.selection]
+	text = "CellForeground"
+	background = "#262626" 
+
+#########################
+### TOKYO NIGHT THEME ###
+#########################
+	[colors.normal]
+	black 	= "#282828"
+	red 	= "#ea6962"
+	green 	= "#a9b665"
+	yellow 	= "#d8a657"
+	blue 	= "#7daea3"
+	magenta	= "#d3869b"
+	cyan 	= "#89b482"
+	white 	= "#d4be98"
+	[colors.bright]
+	black 	= "#282828"
+	red 	= "#ea6962"
+	green 	= "#a9b665"
+	yellow 	= "#d8a657"
+	blue 	= "#7daea3"
+	magenta	= "#d3869b"
+	cyan 	= "#89b482"
+	white 	= "#d4be98"
