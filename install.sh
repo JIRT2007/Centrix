@@ -39,6 +39,7 @@ EOF
 		"$HOME/Centrix/SCRIPTS/git.sh"
 		# OPTIONAL SOFTWARE:
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/spotify.sh"
+		"$HOME/Centrix/SCRIPTS/SOFTWARE/discord.sh"
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/obsidian.sh"
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/vscodium.sh"
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/keepassxc.sh"
