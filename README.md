@@ -10,6 +10,21 @@
 
 ![CENTRIX](SETTINGS/DESKTOP.png) 
 
+## SOFTWARE:
+- **JetBrains Mono** (*https://www.jetbrains.com/es-es/lp/mono/*)
+- **Gnome Extension App** (*https://apps.gnome.org/es/Extensions/*)
+- **Papirus** (*https://github.com/PapirusDevelopmentTeam/papirus-icon-theme*)
+- **GNOME-Tweaks** (*https://gitlab.gnome.org/GNOME/gnome-tweaks*)
+- **Alacritty** (*https://alacritty.org/*)
+- **Fastfetch** (*https://github.com/fastfetch-cli/fastfetch*)
+- **Flatpak** (*https://flatpak.org/*)
+- **cURL** (*https://curl.se/*)
+- **Wget** (*https://www.gnu.org/software/wget/*)
+- **PipX** (*https://pipx.pypa.io/stable/*)
+- **Btop** (*https://github.com/aristocratos/btop*)
+- **Tmux** (*https://tmux.app/*)
+- **Vim** (*https://www.vim.org/*)
+
 ## REQUIREMENTS:
 - A Debian GNU/Linux system installed with the default GNOME desktop environment.
 - The Git program installed, in order to clone the repository.
