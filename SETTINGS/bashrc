@@ -28,4 +28,4 @@ fi
 # ALIASES:
 	alias ls='ls -l --group-directories-first --color=auto'
 	alias fpc='fpc -gl -Co -Cr -Miso' #Compilacion para Free Pascal.
-	alias th='alacritty -e bash -c "$HOME/Centrix/themes.sh"'
+	alias th='bash -c "$HOME/Centrix/THEMES/themes.sh"'

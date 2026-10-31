@@ -29,8 +29,8 @@ y = -2
 
 [colors]
 	[colors.primary] 
-	foreground = "#d4be98"
-	background = "#1C1C1C"
+	foreground = "#c2a08e"
+	background = "#150b0b"
 
 	[colors.selection]
 	text = "CellForeground"
@@ -40,20 +40,20 @@ y = -2
 ### TOKYO NIGHT THEME ###
 #########################
 	[colors.normal]
-	black 	= "#282828"
-	red 	= "#ea6962"
-	green 	= "#a9b665"
-	yellow 	= "#d8a657"
-	blue 	= "#7daea3"
-	magenta	= "#d3869b"
-	cyan 	= "#89b482"
-	white 	= "#d4be98"
+	black 	= "#181a1f"
+	red 	= "#c2445f"
+	green 	= "#993223"
+	yellow 	= "#c99a4a"
+	blue 	= "#c4865f"
+	magenta	= "#ad6670"
+	cyan 	= "#b8603e"
+	white 	= "#c2a08e"
 	[colors.bright]
-	black 	= "#282828"
-	red 	= "#ea6962"
-	green 	= "#a9b665"
-	yellow 	= "#d8a657"
-	blue 	= "#7daea3"
-	magenta	= "#d3869b"
-	cyan 	= "#89b482"
-	white 	= "#d4be98"
+	black 	= "#181a1f"
+	red 	= "#c2445f"
+	green 	= "#993223"
+	yellow 	= "#c99a4a"
+	blue 	= "#c4865f"
+	magenta	= "#ad6670"
+	cyan 	= "#b8603e"
+	white 	= "#c2a08e"

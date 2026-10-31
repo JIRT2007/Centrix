@@ -42,6 +42,7 @@ WALLPAPER="$HOME/Centrix/THEMES/TOKYO_NIGHT/tokyo_night.png"
 gsettings set org.gnome.desktop.background picture-uri "file://$WALLPAPER"
 gsettings set org.gnome.desktop.background picture-uri-dark "file://$WALLPAPER"
 
+
 # BLUR MY SHELL:
 gsettings set org.gnome.shell.extensions.blur-my-shell.appfolder blur true
 gsettings set org.gnome.shell.extensions.blur-my-shell.overview blur true

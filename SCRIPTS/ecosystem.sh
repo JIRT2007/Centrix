@@ -11,7 +11,6 @@ sudo apt purge -y debian-reference-* \
 	seahorse \
 	shotwell \
 	evince \
-	totem \
 	yelp \
 	lynx \
 	nano \
@@ -30,3 +29,25 @@ sudo apt purge -y debian-reference-* \
 	gnome-tour
 
 sudo apt autoremove -y
+
+# ACTUALIZAR SISTEMA
+sudo apt update && sudo apt upgrade 
+
+# INSTALAR SOFTWARE:
+sudo apt install -y gnome-shell-extension-prefs \
+	fonts-jetbrains-mono \
+	gnome-extensions-app \
+	papirus-icon-theme \
+	gnome-tweaks \
+	alacritty \
+	fastfetch \
+	flatpak \
+	curl \
+	wget \
+	pipx \
+	btop \
+	tmux \
+	vim
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install --assumeyes flathub org.mozilla.firefox

@@ -30,25 +30,23 @@ EOF
 
 		[yY])
 		mkdir -p .config/alacritty
-		
 		cp $HOME/Centrix/THEMES/TOKYO_NIGHT/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 		cp $HOME/Centrix/SETTINGS/bashrc $HOME/.bashrc
 
 		# BASIC CONFIGURATION:
-		"$HOME/Centrix/SCRIPTS/BASIC/delete_software.sh"
-		"$HOME/Centrix/SCRIPTS/BASIC/install_software.sh"
-		
+		"$HOME/Centrix/SCRIPTS/ecosystem.sh"
+		# CONFIGURE GIT:
+		"$HOME/Centrix/SCRIPTS/git.sh"
 		# OPTIONAL SOFTWARE:
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/spotify.sh"
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/obsidian.sh"
 		"$HOME/Centrix/SCRIPTS/SOFTWARE/vscodium.sh"
-		
-		# EXTRA CONFIGURATIONS:
-		"$HOME/Centrix/SCRIPTS/CONFIGS/git.sh"
-
+		"$HOME/Centrix/SCRIPTS/SOFTWARE/keepassxc.sh"
+		"$HOME/Centrix/SCRIPTS/SOFTWARE/qemu.sh"
+		"$HOME/Centrix/SCRIPTS/SOFTWARE/fpc.sh"
 		# CONFIGURE DESKTOP:
-		"$HOME/Centrix/SCRIPTS/BASIC/desktop.sh"
-		
+		"$HOME/Centrix/SCRIPTS/desktop.sh"
+
 		#mv $HOME/Centrix $HOME/.Centrix
 		;;
 		
