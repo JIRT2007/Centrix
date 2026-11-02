@@ -19,10 +19,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'alacritty'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Alt>q'
 gsettings set org.gnome.desktop.wm.keybindings close "['<Alt>c']"
+gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Alt>r']"
 
 # ANCLAR SOFTWARE AL DOCK
 gsettings set org.gnome.shell favorite-apps "\
-	['org.mozilla.firefox.desktop', \
+	['firefox-esr.desktop', \
 	 'org.keepassxc.KeePassXC.desktop', \
 	 'spotify.desktop', \
 	 'com.discordapp.Discord.desktop', \
@@ -38,7 +39,7 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface accent-color 'purple'
 
 # WALLPAPER: 
-WALLPAPER="$HOME/Centrix/THEMES/TOKYO_NIGHT/tokyo_night.png"
+WALLPAPER="$HOME/Centrix/THEMES/TOKYO_NIGHT/tokyo_night0.png"
 gsettings set org.gnome.desktop.background picture-uri "file://$WALLPAPER"
 gsettings set org.gnome.desktop.background picture-uri-dark "file://$WALLPAPER"
 

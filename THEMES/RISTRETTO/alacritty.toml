@@ -36,9 +36,9 @@ y = -2
 	text = "CellForeground"
 	background = "#262626" 
 
-#########################
-### TOKYO NIGHT THEME ###
-#########################
+#######################
+### RISTRETTO THEME ###
+#######################
 	[colors.normal]
 	black 	= "#2c2525"
 	red 	= "#fd6883"

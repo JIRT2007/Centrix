@@ -5,7 +5,6 @@ sudo apt purge -y debian-reference-* \
 	libreoffice-* \
 	simple-scan \
 	file-roller \
-	firefox-esr \
 	malcontent \
 	evolution \
 	seahorse \
@@ -36,7 +35,6 @@ sudo apt update && sudo apt upgrade
 # INSTALAR SOFTWARE:
 sudo apt install -y gnome-shell-extension-prefs \
 	fonts-jetbrains-mono \
-	gnome-extensions-app \
 	papirus-icon-theme \
 	gnome-tweaks \
 	alacritty \
@@ -50,4 +48,3 @@ sudo apt install -y gnome-shell-extension-prefs \
 	vim
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --assumeyes flathub org.mozilla.firefox

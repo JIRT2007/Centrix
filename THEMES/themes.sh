@@ -5,7 +5,8 @@ CENTRIX="$HOME/Centrix"
 # RUTA WALLPAPERS:
 
 	# TOKYO_NIGHT 
-	RETROWAVE="$CENTRIX/THEMES/TOKYO_NIGHT/tokyo_night.png"
+	CENTRIX_DEFAULT="$CENTRIX/THEMES/TOKYO_NIGHT/tokyo_night0.png"
+	RETROWAVE="$CENTRIX/THEMES/TOKYO_NIGHT/tokyo_night.jpg"
 	CYBERMOTORCYCLE="$CENTRIX/THEMES/TOKYO_NIGHT/tokyo_night2.jpg"
 
 	# CATPPUCCIN
@@ -14,11 +15,11 @@ CENTRIX="$HOME/Centrix"
 
 	# NORD
 	ROCKS="$CENTRIX/THEMES/NORD/nord.jpg"
-	CERBERUS="$CENTRIX/THEMES/NORD/nord2.jpg"
+	DRAGONS="$CENTRIX/THEMES/NORD/nord2.jpg"
 	
 	# EPIC_RED
 	BERSERK="$CENTRIX/THEMES/EPIC_RED/epic_red.png"
-	CYBERGHOST="$CENTRIX/THEMES/EPIC_RED/epic_red2.jpg"
+	GHOST="$CENTRIX/THEMES/EPIC_RED/epic_red2.jpg"
 	
 	# RISTRETTO
 	PLYMOUTH="$CENTRIX/THEMES/RISTRETTO/ristretto.jpg"
@@ -33,23 +34,37 @@ ___________.__
   |    |   |   Y  \  ___/|  Y Y  \  ___/\___ \
   |____|   |___|__/\____> __|_|__/\____>/_____>
 *-----------------------------------------------*
-| [+ TOKYONIGHT ]           [+ CATPPUCCIN ]     |
-|  L[1]-Retrowave            L[3]-Tux           |
-|  L[2]-Cyber_motorcycles    L[4]-Riden         |
-|                                               |
-| [+ RISTRETTO ]            [+ EPIC RED ]       |
-|  L[5]-Plymouth             L[7]-Berserk       |
-|  L[6]-HotLine_Miami        L[8]-Cyber_ghost   | 
+| ID    THEME          NAME                     |
+*-----------------------------------------------* 
+| [0]  : Tokyo_Night : "Centrix Default"        |
+| [1]  : Tokyo_Night : "Retrowave"              |
+| [2]  : Tokyo_Night : "Cyber motorcycle"       |
+| [3]  : Catppuccin  : "Tux"                    |
+| [4]  : Catppuccin  : "Riden"                  |
+| [5]  : Nord        : "Rocks"                  |
+| [6]  : Nord        : "Dragons"                |
+| [7]  : Ristretto   : "Plymouth"               |
+| [8]  : Ristretto   : "HotLine Miami"          |
+| [9]  : Epic Red    : "Berserk"                |
+| [10] : Epic Red    : "Ghost"                  |
 *-----------------------------------------------*
-| [0] EXIT.                                     |
+| [Q] EXIT.                                     |
 *-----------------------------------------------* 
 EOF
 	read -p "Enter your option: " optionMAIN
 	case $optionMAIN in
 
 	# TOKYO NIGHT
-		1) #RETROWAVE
+		0) #CENTRIX_DEFAULT
 		gsettings set org.gnome.desktop.interface accent-color 'purple'
+		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+		gsettings set org.gnome.desktop.background picture-uri "file://$CENTRIX_DEFAULT"
+		gsettings set org.gnome.desktop.background picture-uri-dark "file://$CENTRIX_DEFAULT"
+		cp $CENTRIX/THEMES/TOKYO_NIGHT/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+		;;
+
+		1) #RETROWAVE
+		gsettings set org.gnome.desktop.interface accent-color 'pink'
 		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 		gsettings set org.gnome.desktop.background picture-uri "file://$RETROWAVE"
 		gsettings set org.gnome.desktop.background picture-uri-dark "file://$RETROWAVE"
@@ -80,9 +95,26 @@ EOF
 		gsettings set org.gnome.desktop.background picture-uri-dark "file://$RIDEN"
 		cp $CENTRIX/THEMES/CATPPUCCIN/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 		;;
+	
+	# NORD
+		5) #ROCKS
+		gsettings set org.gnome.desktop.interface accent-color 'slate'
+		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+		gsettings set org.gnome.desktop.background picture-uri "file://$ROCKS"
+		gsettings set org.gnome.desktop.background picture-uri-dark "file://$ROCKS"
+		cp $CENTRIX/THEMES/NORD/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+		;;
+	
+		6) # DRAGONS
+		gsettings set org.gnome.desktop.interface accent-color 'slate'
+		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+		gsettings set org.gnome.desktop.background picture-uri "file://$DRAGONS"
+		gsettings set org.gnome.desktop.background picture-uri-dark "file://$DRAGONS"
+		cp $CENTRIX/THEMES/NORD/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+		;;
 
 	# RISTRETTO
-		5) #PLYMOUTH
+		7) #PLYMOUTH
 		gsettings set org.gnome.desktop.interface accent-color 'orange'
 		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 		gsettings set org.gnome.desktop.background picture-uri "file://$PLYMOUTH"
@@ -90,7 +122,7 @@ EOF
 		cp $CENTRIX/THEMES/RISTRETTO/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 		;;		
 		
-		6) 
+		8) 
 		gsettings set org.gnome.desktop.interface accent-color 'orange'
 		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 		gsettings set org.gnome.desktop.background picture-uri "file://$HOTLINEMIAMI"
@@ -100,7 +132,7 @@ EOF
 
 		
 	# EPIC_RED
-		7) #BERSERK
+		9) #BERSERK
 		gsettings set org.gnome.desktop.interface accent-color 'red'
 		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 		gsettings set org.gnome.desktop.background picture-uri "file://$BERSERK"
@@ -108,15 +140,15 @@ EOF
 		cp $CENTRIX/THEMES/EPIC_RED/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 		;;
 		
-		8) #CYBERGHOST
+		10) #GHOST
 		gsettings set org.gnome.desktop.interface accent-color 'red'
 		gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-		gsettings set org.gnome.desktop.background picture-uri "file://$CYBERGHOST"
-		gsettings set org.gnome.desktop.background picture-uri-dark "file://$CYBERGHOST"
+		gsettings set org.gnome.desktop.background picture-uri "file://$GHOST"
+		gsettings set org.gnome.desktop.background picture-uri-dark "file://$GHOST"
 		cp $CENTRIX/THEMES/EPIC_RED/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 		;;
 	
-		0)
+		[qQ])
 		clear
 		exit 0 & kill -9 $PPID
 		;;
